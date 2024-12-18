@@ -3,12 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #E3F2A1; /* Verde suave (tono mango) */
 }
 
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    color: #F57C00; /* Naranja brillante (como el interior del mango) */
 }
 
 .products {
@@ -19,26 +20,40 @@ h1 {
 }
 
 .product {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 150px; /* Reducido el ancho */
-    margin: 10px;
-    padding: 10px; /* Reducido el padding */
+    background-color: #FFEB3B; /* Amarillo cálido (color de la pulpa de mango) */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    margin: 15px;
+    padding: 12px;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
 }
 
 .product img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    max-height: 100px; /* Limitar altura máxima */
-    object-fit: contain; /* Ajustar imagen sin distorsión */
+    max-height: 120px; /* Limitar altura máxima */
+    object-fit: contain;
 }
 
 .product a {
-    color: #3498db;
+    color: #D32F2F; /* Rojo mango maduro */
     text-decoration: none;
-    font-size: 9px; /* Reducir el tamaño del texto del enlace */
+    font-size: 12px; /* Texto más grande */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.product a:hover {
+    color: #C2185B; /* Rojo más intenso al pasar el mouse */
 }
