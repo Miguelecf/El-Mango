@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Coto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+
+    <!-- Formulario de Búsqueda -->
+    <form method="POST" action="/">
+        <input 
+            type="text" 
+            name="keyword" 
+            placeholder="Buscar producto..." 
+            value="{{ keyword or '' }}"
+        >
+        <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Mostrar la lista de productos -->
+    <div class="products">
+        {% for producto in productos %}
+            <div class="product">
+                <img src="{{ producto.image }}" alt="{{ producto.name }}">
+                <h3>{{ producto.name }}</h3>
+                <p>Precio: {{ producto.price }}</p>
+                <a href="{{ producto.link }}" target="_blank">Ver producto</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

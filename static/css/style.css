@@ -1,0 +1,44 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Reducido el ancho */
+    margin: 10px;
+    padding: 10px; /* Reducido el padding */
+    text-align: center;
+    font-size: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-height: 100px; /* Limitar altura máxima */
+    object-fit: contain; /* Ajustar imagen sin distorsión */
+}
+
+.product a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 9px; /* Reducir el tamaño del texto del enlace */
+}

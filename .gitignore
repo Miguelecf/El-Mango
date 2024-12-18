@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Flask
+instance/
+.env
+*.env
+*.sqlite3
+*.db
+.DS_Store
+
+# Logs and debugging
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+.cache
+.tox
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
